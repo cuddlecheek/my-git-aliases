@@ -1,0 +1,8 @@
+ss = status -s
+adal = add --all
+cm = commit -m
+last = log -1 HEAD
+graph = log --decorate --graph
+hist = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(green)(%ar)%C(reset) %s%C(reset) [%C(red)%an%C(reset)]'
+aliases = config --get-regexp alias
+cmall = !git add -A && git commit -m
